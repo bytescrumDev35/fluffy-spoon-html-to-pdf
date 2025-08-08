@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Website Audit Report</title>
+      <style>
+         body {
+            /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+         }
+
+         .container {
+            max-width: 960px;
+            margin: auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+         }
+
+         h1,
+         h2,
+         h3 {
+            color: #1e3a8a;
+         }
+
+         .score {
+            font-size: 1.25rem;
+            font-weight: bold;
+         }
+
+         .score.high {
+            color: #dc2626; /* Red */
+         }
+
+         .score.moderate {
+            color: #f97316; /* Orange */
+         }
+
+         .score.warning {
+            color: #eab308; /* Yellow */
+         }
+
+         .score.low {
+            color: #16a34a; /* Green */
+         }
+
+         .score.unknown {
+            color: #6b7280; /* Gray */
+            font-style: italic;
+         }
+
+         .section {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 1rem;
+         }
+
+         .label {
+            font-weight: 600;
+            color: #374151;
+         }
+
+         .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.85rem;
+            border-radius: 9999px;
+            color: #fff;
+         }
+
+         .badge.green {
+            background-color: #16a34a;
+         }
+         .badge.orange {
+            background-color: #f97316;
+         }
+         .badge.red {
+            background-color: #dc2626;
+         }
+         .badge.yellow {
+            background-color: #eab308;
+            color: #000;
+         }
+         .badge.gray {
+            background-color: #6b7280;
+         }
+
+         .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+         }
+
+         .table th,
+         .table td {
+            text-align: left;
+            padding: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+         }
+
+         .table th {
+            background-color: #f3f4f6;
+         }
+
+         .emoji {
+            font-size: 1.2rem;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <h1>📊 Website Audit Report</h1>
+         <div class="section">
+            <h2>Executive Summary</h2>
+            <p>
+               <span class="label">Overall Score:</span>
+               <span class="score moderate">85/100 (Grade: B)</span>
+            </p>
+            <p><span class="label">Critical Issues:</span> 0</p>
+            <p><span class="label">Revenue at Risk:</span> $0</p>
+         </div>
+
+         <div class="section">
+            <h2>Performance Scorecard</h2>
+            <table class="table">
+               <thead>
+                  <tr>
+                     <th>Category</th>
+                     <th>Score</th>
+                     <th>Status</th>
+                     <th>Business Impact</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Performance</td>
+                     <td><span class="badge red">62/100</span></td>
+                     <td class="score high">Needs Improvement</td>
+                     <td>User Experience & SEO Rankings</td>
+                  </tr>
+                  <tr>
+                     <td>SEO Optimization</td>
+                     <td><span class="badge green">95/100</span></td>
+                     <td class="score low">Excellent</td>
+                     <td>Search Visibility & Traffic</td>
+                  </tr>
+                  <tr>
+                     <td>Security</td>
+                     <td><span class="badge green">100/100</span></td>
+                     <td class="score low">Excellent</td>
+                     <td>Data Protection & Trust</td>
+                  </tr>
+                  <tr>
+                     <td>Accessibility</td>
+                     <td><span class="badge orange">87/100</span></td>
+                     <td class="score moderate">Good</td>
+                     <td>User Inclusion & Legal Compliance</td>
+                  </tr>
+                  <tr>
+                     <td>Conversion</td>
+                     <td><span class="badge red">65/100</span></td>
+                     <td class="score high">Needs Improvement</td>
+                     <td>Revenue Generation & ROI</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+
+         <div class="section">
+            <h2>Core Web Vitals</h2>
+            <ul>
+               <li>
+                  <span class="label">LCP:</span>
+                  <span class="score high">10.94s — Poor</span>
+               </li>
+               <li>
+                  <span class="label">INP:</span>
+                  <span class="score low">0ms — Excellent</span>
+               </li>
+               <li>
+                  <span class="label">CLS:</span>
+                  <span class="score low">0.000 — Excellent</span>
+               </li>
+               <li>
+                  <span class="label">FCP:</span>
+                  <span class="score high">4.40s — Poor</span>
+               </li>
+               <li>
+                  <span class="label">FID:</span>
+                  <span class="score low">&gt; 84ms — Excellent</span>
+               </li>
+               <li>
+                  <span class="label">TTFB:</span>
+                  <span class="score low">0ms — Excellent</span>
+               </li>
+            </ul>
+         </div>
+
+         <div class="section">
+            <h2>Score: <span class="score moderate">75/100</span></h2>
+         </div>
+
+         <div class="section">
+            <h2>Unknown Score:</h2>
+            <p class="score unknown">Unknown / Not Available</p>
+         </div>
+      </div>
+   </body>
+</html>
